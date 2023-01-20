@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'youMap_app.apps.YoumapAppConfig'
-    'django_extensions',
-    'rest_framework',
+    'youMap_app.apps.YoumapAppConfig',
+    # 'django_extensions',
+    # 'rest_framework',
 
 ]
 
@@ -79,11 +79,13 @@ WSGI_APPLICATION = 'youMapProj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'beenthere',
+        'USER':'beenthereuser',
+        'PASSWORD': 'there',
+        'HOST': 'localhost'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
