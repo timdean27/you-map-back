@@ -10,4 +10,8 @@ class Spot(models.Model):
     def __str__(self):
         return self.post
     
+class Comments(models.Model):
+    post =models.ForeignKey(Spot, on_delete=models.CASCADE, related_name='comments')
+    comment_time =models.DateField()
+    
     
