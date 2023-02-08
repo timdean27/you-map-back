@@ -1,0 +1,3 @@
+
+link to site on how to add github oauth to django
+https://www.tutorialspoint.com/enabling-github-oauth-in-django
